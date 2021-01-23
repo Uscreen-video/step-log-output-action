@@ -1,0 +1,12 @@
+name: 'Step Log Output Action'
+description: 'Puts step log into step output'
+inputs:
+  command:  # id of input
+    description: 'Command to be executed'
+    required: true
+outputs:
+  log: # id of output
+    description: 'Log of executed command'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
