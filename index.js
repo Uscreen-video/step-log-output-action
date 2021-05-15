@@ -47,6 +47,6 @@ execution.on('error', (error) => {
 });
 
 execution.on('close', (code) => {
-  core.info(log)
+  core.info(`LOG: ${log}`)
   core.setOutput('log', log)
 });
